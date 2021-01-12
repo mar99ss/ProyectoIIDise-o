@@ -1,0 +1,15 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/welcome.css": "/css/welcome.css",
+    "/css/horizontal-layout.css": "/css/horizontal-layout.css",
+    "/css/admin.index.css": "/css/admin.index.css",
+    "/css/miembros.css": "/css/miembros.css",
+    "/css/jerarquia.css": "/css/jerarquia.css",
+    "/css/edit-miembros.css": "/css/edit-miembros.css",
+    "/css/asignar-grupo.css": "/css/asignar-grupo.css",
+    "/css/posiciones-jerarquia.css": "/css/posiciones-jerarquia.css",
+    "/css/cambio-jerarquia.css": "/css/cambio-jerarquia.css",
+    "/css/ippopup.css": "/css/ippopup.css",
+    "/css/movimientos-catalog.css": "/css/movimientos-catalog.css"
+}

@@ -1,0 +1,46 @@
+.img-header {
+    $img-height: calc(4rem + 2.7vw);
+
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+
+    >* {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 50px 50px;
+    }
+
+    >img {
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .content {
+        background-color: rgba(0, 0, 0, 0.3);
+
+        h1 {
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            margin: 0;
+        }
+
+        img {
+            height: $img-height;
+            width: $img-height;
+            margin-right: 1rem;
+            filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+}
+
+.text-item {
+    word-wrap: break-word;
+    >img {
+        width: 14rem;
+        max-height: 9rem;
+        object-fit: contain;
+    }
+}

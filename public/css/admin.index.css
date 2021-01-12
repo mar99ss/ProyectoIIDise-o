@@ -1,0 +1,37 @@
+.line-left::before {
+  content: " ";
+  position: absolute;
+  top: -17.5%;
+  left: 0;
+  height: 135%;
+  width: 0.1px;
+  background-color: #e2e2e2;
+}
+
+.movement-logo {
+  height: 10rem;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.space-separator {
+  height: 20px;
+}
+
+p {
+  padding: 0;
+}
+
+@media all and (max-width: 768px) {
+  .line-left::before {
+    width: 0 !important;
+  }
+}
+
+.roundedBorders {
+  height: 140px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

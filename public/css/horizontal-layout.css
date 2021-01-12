@@ -1,0 +1,89 @@
+body {
+  background-color: #373614;
+}
+
+body .content,
+body .vertical-navbar {
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+body .vertical-navbar {
+  height: 100%;
+  overflow-y: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+body .vertical-navbar img {
+  width: calc(205px * 0.7);
+  margin-top: 0.5rem;
+  margin-left: calc(205px * 0.15);
+}
+
+body .vertical-navbar .items {
+  margin-top: 3rem;
+}
+
+body .vertical-navbar .items > ul {
+  padding: 0;
+}
+
+body .vertical-navbar .items li {
+  padding: 0.7rem 1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  size: 0.9rem;
+}
+
+body .vertical-navbar .items li.active {
+  background-color: #fafafa;
+  border-radius: 1rem 0 0 1rem;
+  margin-left: calc(205px * 0.3 - 20px);
+}
+
+body .vertical-navbar .items li.active .icon {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0.9rem 0 0;
+}
+
+body .vertical-navbar .items li:not(.active) {
+  color: white;
+  margin-left: calc(205px * 0.3 + 0.9rem);
+}
+
+body .vertical-navbar .items li:not(.active) .icon {
+  display: none;
+}
+
+body .content {
+  margin-left: 205px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #fafafa;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 650px) {
+  .content {
+    border-radius: 30px 0 0 30px;
+    width: calc(100vw - 205px);
+  }
+
+  .vertical-navbar {
+    width: 205px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    border-radius: 0;
+    width: 100vw;
+    margin-left: 0;
+  }
+}
+

@@ -1,0 +1,80 @@
+.line-left::before {
+    content: " ";
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 80%;
+    width: 0.1px;
+    background-color: #e2e2e2;
+}
+.box {
+    background: #f7f7f7;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.25),
+        inset 4px 4px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    height: 32rem;
+}
+.my-custom-scrollbar {
+    position: relative;
+    width: auto;
+    height: 32rem;
+    overflow: auto;
+}
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 100px;
+
+    thead {
+        &, & * {
+            z-index: 10;
+        }
+        th {
+        position: sticky;
+        top: 0;
+        }
+    }
+}
+
+.btn-red {
+    background: #c94023; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to top,
+        #b22828,
+        #db8560
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to top,
+        #b22828,
+        #db8560
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: none;
+}
+
+.table td {
+    text-align: center;
+    padding-right: 1rem;
+}
+.table th {
+    text-align: center;
+}
+.ddbutton {
+    overflow: hidden;
+    display: inline-block;
+    z-index: 0;
+}
+.btn-green-moon {
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #8FA44A, #BEDB60);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #8FA44A, #BEDB60); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: none;
+}
+
+.btnR{
+    border-radius: 3px;
+    height: 2rem ;
+}
+select option { color: black; }

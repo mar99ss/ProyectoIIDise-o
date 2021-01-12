@@ -1,0 +1,89 @@
+.line-left::before {
+    content: ' ';
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 80%;
+    width: 0.1px;
+    background-color: #e2e2e2;
+}
+
+.horizontal-scroll {
+    overflow-x: scroll;
+    display: flex;
+    width: 15rem;
+    height: 3rem;
+
+    >* {
+        display: inline;
+        position: relative;
+
+        &:not(first-child) {
+            margin-left: .5rem;
+        }
+    }
+
+    .eliminar {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        z-index: 2;
+        cursor: pointer;
+        //filter: invert(18%) sepia(99%) saturate(2750%) hue-rotate(356deg) brightness(93%) contrast(86%);
+        //filter: invert(93%) sepia(20%) saturate(738%) hue-rotate(349deg) brightness(88%) contrast(87%);
+        //filter: invert(58%) sepia(7%) saturate(3139%) hue-rotate(31deg) brightness(106%) contrast(80%);
+        filter: invert(15%) sepia(12%) saturate(3789%) hue-rotate(24deg) brightness(96%) contrast(87%);
+    }
+
+    input {
+        z-index: 1;
+    }
+}
+.innerShadow{
+    padding: 0 1rem;
+	background: #F8F7F7;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+}
+.btn-green-moon {
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #8FA44A, #BEDB60);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #8FA44A, #BEDB60); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: none;
+}
+.box{
+    background: #F7F7F7;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.25), inset 4px 4px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    height: 33rem;
+}
+.my-custom-scrollbar {
+    position: relative;
+    width: auto;
+    height: 33rem;
+    overflow: auto;
+}
+.tableFixHead{
+    overflow-y: auto; height: 100px;
+}
+.tableFixHead thead th { position: sticky; top: 0; }
+.btn-red {
+    background: #C94023;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #B22828, #DB8560);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #B22828, #DB8560); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: none;
+}
+
+.table td {
+    text-align: center;
+ }
+ .table th {
+    text-align: center;
+ }

@@ -1,0 +1,95 @@
+$horizontal-breakpoint: 650px;
+$navbar-width: 205px;
+$icon-width: 20px;
+
+body {
+    background-color: #373614;
+
+    .content, .vertical-navbar {
+        display: inline-block;
+        transition: all .5s ease;
+    }
+
+    .vertical-navbar {
+        height: 100%;
+        overflow-y: hidden;
+        position: absolute;
+        left: 0;
+        z-index: 0;
+
+        img {
+            width: calc(#{$navbar-width} * 0.7);
+            margin-top: .5rem;
+            margin-left: calc(#{$navbar-width} * 0.15);
+        }
+
+        .items {
+            margin-top: 3rem;
+
+            >ul {
+                padding: 0;
+            }
+
+            li {
+                padding: .7rem 1rem;
+                list-style: none;
+                //width: calc(#{$navbar-width});
+                display: flex;
+                align-items: center;
+                size: 0.9rem;
+                //margin-left: calc(#{$navbar-width});
+
+                &.active {
+                    background-color: #fafafa;
+                    border-radius: 1rem 0 0 1rem;
+                    margin-left: calc(#{$navbar-width} * 0.3 - #{$icon-width});
+                    .icon {
+                        width: $icon-width;
+                        object-fit: contain;
+                        margin: 0 0.9rem 0 0;
+                    }
+                }
+
+                &:not(.active) {
+                    color: white;
+                    margin-left: calc(#{$navbar-width} * 0.3 + 0.9rem);
+
+                    .icon {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        margin-left: $navbar-width;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: #fafafa;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: $horizontal-breakpoint) {
+    .content {
+        border-radius: 30px 0 0 30px;
+        width: calc(100vw - #{$navbar-width});
+    }
+
+    .vertical-navbar {
+        width: $navbar-width;
+    }
+}
+
+@media screen and (max-width: $horizontal-breakpoint) {
+    .content {
+        border-radius: 0;
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .vertical-navbar {
+
+    }
+}

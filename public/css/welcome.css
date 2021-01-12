@@ -1,0 +1,48 @@
+.img-header {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+
+.img-header > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 50px 50px;
+}
+
+.img-header > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.img-header .content {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.img-header .content h1 {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.img-header .content img {
+  height: calc(4rem + 2.7vw);
+  width: calc(4rem + 2.7vw);
+  margin-right: 1rem;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.text-item {
+  word-wrap: break-word;
+}
+
+.text-item > img {
+  width: 14rem;
+  max-height: 9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
